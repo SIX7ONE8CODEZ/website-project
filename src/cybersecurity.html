@@ -67,7 +67,7 @@
             <div class="services-grid">
                 <div class="security-service-card">
                     <div class="service-icon">
-                        <img src="https://img.icons8.com/fluency/96/000000/security-shield.png" alt="Security Assessment Icon">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/shield-check.svg" alt="Security Assessment Icon">
                     </div>
                     <h3>Security Assessment</h3>
                     <p>Comprehensive evaluation of your current security posture to identify vulnerabilities, compliance gaps, and opportunities for improvement.</p>
@@ -82,7 +82,7 @@
                 
                 <div class="security-service-card">
                     <div class="service-icon">
-                        <img src="https://img.icons8.com/fluency/96/000000/threat.png" alt="Threat Detection Icon">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/shield-exclamation.svg" alt="Threat Detection Icon">
                     </div>
                     <h3>Threat Detection & Response</h3>
                     <p>Active monitoring and rapid response to security incidents to minimize damage and recovery time.</p>
@@ -97,7 +97,7 @@
                 
                 <div class="security-service-card">
                     <div class="service-icon">
-                        <img src="https://img.icons8.com/fluency/96/000000/cloud-sync.png" alt="Cloud Security Icon">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/cloud-check.svg" alt="Cloud Security Icon">
                     </div>
                     <h3>Cloud Security</h3>
                     <p>Secure your cloud infrastructure and applications with comprehensive protection strategies.</p>
@@ -112,7 +112,7 @@
                 
                 <div class="security-service-card">
                     <div class="service-icon">
-                        <img src="https://img.icons8.com/fluency/96/000000/data-protection.png" alt="Data Protection Icon">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/lock.svg" alt="Data Protection Icon">
                     </div>
                     <h3>Data Protection</h3>
                     <p>Safeguard your sensitive data from unauthorized access, breaches, and compliance violations.</p>
@@ -127,7 +127,7 @@
                 
                 <div class="security-service-card">
                     <div class="service-icon">
-                        <img src="https://img.icons8.com/fluency/96/000000/user-shield.png" alt="Security Training Icon">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/person-badge.svg" alt="Security Training Icon">
                     </div>
                     <h3>Security Training</h3>
                     <p>Empower your team to become the first line of defense against cyber threats.</p>
@@ -142,7 +142,7 @@
                 
                 <div class="security-service-card">
                     <div class="service-icon">
-                        <img src="https://img.icons8.com/fluency/96/000000/technical-support.png" alt="Managed Security Icon">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/headset.svg" alt="Managed Security Icon">
                     </div>
                     <h3>Managed Security Services</h3>
                     <p>Ongoing management and support of your cybersecurity infrastructure for continuous protection.</p>
@@ -193,21 +193,21 @@
             <div class="testimonials-grid">
                 <div class="testimonial">
                     <div class="testimonial-image">
-                        <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="David">
+                        <img src="https://ui-avatars.com/api/?name=David+R&size=128&background=0D8ABC&color=fff" alt="David">
                     </div>
                     <p>"SIX7ONE8's cybersecurity team detected an advanced persistent threat that had evaded our previous security provider for months. Their quick response prevented what could have been a catastrophic data breach for our financial services firm."</p>
                     <cite>— David R., CFO, Regional Financial Services</cite>
                 </div>
                 <div class="testimonial">
                     <div class="testimonial-image">
-                        <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Karen">
+                        <img src="https://ui-avatars.com/api/?name=Karen+M&size=128&background=8A0DAB&color=fff" alt="Karen">
                     </div>
                     <p>"As a healthcare provider, HIPAA compliance is non-negotiable for us. SIX7ONE8 implemented a comprehensive security framework that not only ensured compliance but also streamlined our operations. Their team truly understands the unique challenges of our industry."</p>
                     <cite>— Dr. Karen M., CEO, Medical Group</cite>
                 </div>
                 <div class="testimonial">
                     <div class="testimonial-image">
-                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="James">
+                        <img src="https://ui-avatars.com/api/?name=James+T&size=128&background=0DAB2F&color=fff" alt="James">
                     </div>
                     <p>"After experiencing a ransomware attack that crippled our operations, we engaged SIX7ONE8 to rebuild our security from the ground up. Three years later, we've had zero security incidents despite multiple attempted breaches that their systems successfully blocked."</p>
                     <cite>— James T., CIO, Manufacturing Company</cite>
@@ -218,17 +218,20 @@
         <section id="security-assessment" class="contact-info">
             <h2>Request Your Free Security Assessment</h2>
             <p>Take the first step toward a more secure digital future. Our team will conduct a preliminary assessment of your security posture at no cost.</p>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="tel" placeholder="Phone Number">
-                <select required>
+            <form class="contact-form" action="https://formsubmit.co/six7one8@icloud.com" method="POST">
+                <input type="hidden" name="_subject" value="Security Assessment Request from Website">
+                <input type="hidden" name="_next" value="https://six7one8codez.github.io/website-project/thanks.html">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <select name="company_size" required>
                     <option value="" disabled selected>Company Size</option>
                     <option value="small">Small (1-50 employees)</option>
                     <option value="medium">Medium (51-250 employees)</option>
                     <option value="large">Large (251+ employees)</option>
                 </select>
-                <select required>
+                <select name="primary_concern" required>
                     <option value="" disabled selected>Primary Security Concern</option>
                     <option value="compliance">Regulatory Compliance</option>
                     <option value="data-protection">Data Protection</option>
@@ -237,7 +240,7 @@
                     <option value="employee-training">Employee Training</option>
                     <option value="other">Other</option>
                 </select>
-                <textarea placeholder="Tell us about your current security challenges"></textarea>
+                <textarea name="security_challenges" placeholder="Tell us about your current security challenges"></textarea>
                 <button type="submit" class="button">Request Assessment</button>
             </form>
         </section>

@@ -163,17 +163,21 @@
         <section class="contact-info">
             <h2>Ready to Get Started?</h2>
             <p>Contact our real estate team today to discuss your investment goals or selling needs.</p>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="tel" placeholder="Phone Number">
-                <select>
-                    <option value="" disabled selected>I am a...</option>
+            <form class="contact-form" action="https://formsubmit.co/six7one8@icloud.com" method="POST">
+                <input type="hidden" name="_subject" value="Real Estate Inquiry from Website">
+                <input type="hidden" name="_next" value="https://six7one8codez.github.io/website-project/thanks.html">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <label for="user-role">I am a...</label>
+                <select id="user-role" name="user_role">
+                    <option value="" disabled selected>Select an option</option>
                     <option value="investor">Real Estate Investor</option>
                     <option value="seller">Property Seller</option>
                     <option value="other">Other</option>
                 </select>
-                <textarea placeholder="Tell us about your goals"></textarea>
+                <textarea name="goals" placeholder="Tell us about your goals"></textarea>
                 <button type="submit" class="button">Submit</button>
             </form>
         </section>
